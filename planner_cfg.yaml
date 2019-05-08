@@ -1,0 +1,4 @@
+ECS_names: hana_vm ecs-smt
+Start_time: "09:00"
+Stop_time: "19:00"
+week_day: "1-5" 

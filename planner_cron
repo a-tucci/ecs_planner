@@ -1,0 +1,2 @@
+0 9 * * 1-5 . /etc/ecs_planner/cloud_env;/usr/local/bin/nova start hana_vm ecs-smt | /usr/bin/ts >> /var/log/ecs_planner.log
+0 19 * * 1-5 . /etc/ecs_planner/cloud_env;/usr/local/bin/nova stop hana_vm ecs-smt | /usr/bin/ts >> /var/log/ecs_planner.log
