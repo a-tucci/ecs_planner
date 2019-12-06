@@ -12,11 +12,11 @@ TENANT_ID: Specifies the project ID displayed on the Project List tab on the My 
 OS_TENANT_NAME: Specifies the project name displayed on the Project List tab on the My Credential page.
 OS_PROJECT_NAME: The value is the same as the OS_TENANT_NAME value.
 OS_AUTH_URL: The parameter value is in the format of https://IAM URL:Port number/API version, for example, https://iam.example.com:443/v3.
-	Peru: https://iam.sa-peru-1.telefonicaopencloud.com:443/v3
-	Chile: https://iam.sa-chile-1.telefonicaopencloud.com:443/v3
-	Mexico: https://iam.na-mexico-1.telefonicaopencloud.com:443/v3
-	Brazil: https://iam.sa-brazil-1.telefonicaopencloud.com:443/v3
-	Argentina: https://iam.sa-argentina-1.telefonicaopencloud.com:443/v3
+	Peru: https://iam.sa-peru-1.myhuaweicloud.com:443/v3
+	Chile: https://iam.sa-chile-1.myhuaweicloud.com:443/v3
+	Mexico: https://iam.na-mexico-1.myhuaweicloud.com:443/v3
+	Brazil: https://iam.sa-brazil-1.myhuaweicloud.com:443/v3
+	Argentina: https://iam.sa-argentina-1.myhuaweicloud.com:443/v3
 
 1.2 planner_cfg.yaml
 ECS_names: The ECS names, keep the format in one line and split by space.
@@ -33,7 +33,7 @@ apt-get install python-setuptools
 apt-get install python-pip
 apt-get install python-dev
 pip install python-openstackclient==3.2.1
-pip  install pyyaml
+pip install pyyaml
 apt install moreutils
 2.2 Install tools
 chmod 755 ./install.sh
