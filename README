@@ -1,6 +1,19 @@
 0. Introduce
 ecs_planner is a tool to plan starting and stopping the servers for Open Cloud and Huawei Cloud.
 
+1. Install - Prepare package (Unbuntu 18.04 as example)
+apt-get update
+apt-get upgrade
+apt-get install python3
+apt-get install python-setuptools
+apt-get install python-pip
+apt-get install python-dev
+pip3 install python-openstackclient==3.2.1
+pip3 install pyyaml
+apt install moreutils
+2.2 Install tools
+chmod 755 ./install.sh
+sh ./install.sh
 
 1. Configuration
 
@@ -24,20 +37,7 @@ Start_time: The server start time with format of hour:minute, 24-hour system.
 Stop_time: The server stop time with format of hour:minute, 24-hour system.
 week_day: In which days of one would execute, 0 Sunday, 1 Monday, 2 Tuesday, 3 Wednesday, 4 Thursady, 5 Friday, 6 Saturday. "1-5" means from Monday to Friday. "1,3,5" means Monday Wednesday and Friday.
 
-2. Install
-2.1 Prepare package (Unbuntu as example)
-apt-get update
-apt-get upgrade
-apt-get install python3
-apt-get install python-setuptools
-apt-get install python-pip
-apt-get install python-dev
-pip install python-openstackclient==3.2.1
-pip install pyyaml
-apt install moreutils
-2.2 Install tools
-chmod 755 ./install.sh
-sh ./install.sh
+
 
 3. Execute
 cd /etc/ecs_planner
