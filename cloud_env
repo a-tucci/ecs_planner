@@ -4,9 +4,9 @@ export OS_PASSWORD=***
 export TENANT_ID=***
 
 # Only change these for a different region
-export OS_TENANT_NAME=sa-peru-1
-export OS_PROJECT_NAME=sa-peru-1
-export OS_AUTH_URL=https://iam.sa-peru-1.myhuaweicloud.com:443/v3
+export OS_TENANT_NAME=sa-argentina-1
+export OS_PROJECT_NAME=sa-argentina-1
+export OS_AUTH_URL=https://iam.sa-argentina-1.myhuaweicloud.com:443/v3
 
 # No changes needed beyond this point
 export NOVA_ENDPOINT_TYPE=publicURL
