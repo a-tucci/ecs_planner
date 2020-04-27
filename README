@@ -1,5 +1,5 @@
 0. Introduce
-ecs_planner is a tool to plan starting and stopping the servers for Open Cloud and Huawei Cloud.
+ecs_planner is a tool to plan starting and stopping the servers for Huawei Cloud.
 
 1. Install - Prepare package (Unbuntu 18.04 as example)
 apt-get update
