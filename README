@@ -15,16 +15,12 @@ apt install moreutils
 
 1.2 - Clone the Repository
 git clone https://github.com/a-tucci/ecs_planner.git
-
-1.3 - Install tools
 cd ecs_planner
-chmod 755 ./install.sh
-sh ./install.sh
 
 
 2. Configuration
 
-2.1 cloud_env
+2.1 - Edit cloud_env
 OS_USERNAME: This value is the username for logging in to the management console.
 OS_USER_DOMAIN_NAME: The value is the enterprise account used for logging in to the management console.
 OS_PASSWORD: The value is the password used for logging in to the management console.
@@ -38,13 +34,20 @@ OS_AUTH_URL: The parameter value is in the format of https://IAM URL:Port number
 	Brazil: https://iam.sa-brazil-1.myhuaweicloud.com:443/v3
 	Argentina: https://iam.sa-argentina-1.myhuaweicloud.com:443/v3
 
-2.2 planner_cfg.yaml
+2.2 - Edit planner_cfg.yaml
 ECS_names: The ECS names, keep the format in one line and split by space.
 Start_time: The server start time with format of hour:minute, 24-hour system.
 Stop_time: The server stop time with format of hour:minute, 24-hour system.
 week_day: In which days of one would execute, 0 Sunday, 1 Monday, 2 Tuesday, 3 Wednesday, 4 Thursady, 5 Friday, 6 Saturday.
 "1-5" means from Monday to Friday. "1,3,5" means Monday Wednesday and Friday.
 
+2.3 - Set Time Zone
+dpkg-reconfigure tzdata
+service cron restart
+
+2.4 - Install tools
+chmod 755 ./install.sh
+sh ./install.sh
 
 3. Execute
 cd /etc/ecs_planner
